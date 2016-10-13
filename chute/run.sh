@@ -9,7 +9,8 @@
 # program that you write (e.g. in Python).
 while true; do
     #
-    # NOT IMPLEMENTED
+    iperf -c iperf.wiscnet.net > /usr/share/nginx/html/results.txt
+    ping yahoo.com -c 5 > /usr/share/nginx/html/results.txt
     #
 
     sleep 60
