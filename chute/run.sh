@@ -10,10 +10,11 @@
 while true; do
     #
     iperf -c iperf.wiscnet.net >> /usr/share/nginx/html/results.txt
+    sleep 30
     ping yahoo.com -c 5 >> /usr/share/nginx/html/results.txt
     #
 
-    sleep 60
+    sleep 30
 done
 
 # If execution reaches this point, the chute will stop running.
