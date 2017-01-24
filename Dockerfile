@@ -8,7 +8,8 @@ FROM ubuntu:16.04
 # Install dependencies.  You can add additional packages here following the example.
 RUN apt-get update && apt-get install -y \
 #   <package> \
-    iperf3
+    iperf3 \
+    iptables
 
 ADD chute/run.sh /usr/local/bin/run.sh
 # This is the command that will be run inside the container.  It can be a bash
