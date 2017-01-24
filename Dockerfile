@@ -14,4 +14,7 @@ RUN apt-get update && apt-get install -y \
 ADD chute/run.sh /usr/local/bin/run.sh
 # This is the command that will be run inside the container.  It can be a bash
 # script that runs other commands, a python script, a compiled binary, etc.
+
+EXPOSE 5201 5202 
+
 CMD ["bash", "/usr/local/bin/run.sh"]
