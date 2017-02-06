@@ -10,10 +10,11 @@ RUN apt-get update && apt-get install -y \
 #   <package> \
     iperf3 \
     iptables \
-    apache2
+    apache2 \
+    wget
 
 ADD chute/run.sh /usr/local/bin/run.sh
-ADD chute/paraglide.mp4 /var/wwww/html/paraglide.mp4
+
 # This is the command that will be run inside the container.  It can be a bash
 # script that runs other commands, a python script, a compiled binary, etc.
 
