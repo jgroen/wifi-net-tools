@@ -9,12 +9,14 @@ FROM ubuntu:16.04
 RUN apt-get update && apt-get install -y \
 #   <package> \
     iperf3 \
-    iptables
+    iptables \
+    apache2
 
 ADD chute/run.sh /usr/local/bin/run.sh
+ADD chute/paraglide.mp4 /var/wwww/html/paraglide.mp4
 # This is the command that will be run inside the container.  It can be a bash
 # script that runs other commands, a python script, a compiled binary, etc.
 
-EXPOSE 5201 5202 
+EXPOSE 80 5201 5202 
 
 CMD ["bash", "/usr/local/bin/run.sh"]
