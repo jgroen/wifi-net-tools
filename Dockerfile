@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
     wget
 
 RUN cd /var/www/html
-RUN wget http://www.panocam3d.com/videos3d360/Paragliding%203D%20360%20-%20panocam3d.com.mp4 -O paraglide.mp4
+RUN wget http://52.37.177.82/plane_no_tiles/output_3000k.mp4 -O plane.mp4
 RUN cd
 
 ADD chute/run.sh /usr/local/bin/run.sh
