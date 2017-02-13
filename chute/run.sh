@@ -5,6 +5,8 @@ iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 iperf3 -s -D
 iperf3 -s -p 5202 -D
 
+rm /var/www/html/index.html
+
 /etc/init.d/apache2 restart
     
 while true; do
