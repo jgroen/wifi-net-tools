@@ -6,9 +6,6 @@ iperf3 -s -D
 iperf3 -s -p 5202 -D
 
 sudo service apache2 start
-
-cd /var/www/html
-wget http://www.panocam3d.com/videos3d360/Paragliding%203D%20360%20-%20panocam3d.com.mp4 -O paraglide.mp4
     
 while true; do
     sleep 300
