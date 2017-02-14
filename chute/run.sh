@@ -7,6 +7,8 @@ iperf3 -s -p 5202 -D
 
 rm /var/www/html/index.html
 
+mv plane.mp4 /var/www/html/
+
 /etc/init.d/apache2 restart
     
 while true; do
