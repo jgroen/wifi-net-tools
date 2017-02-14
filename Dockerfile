@@ -15,6 +15,8 @@ RUN apt-get update && apt-get install -y \
 
 RUN wget http://52.37.177.82/plane_no_tiles/output_3000k.mp4 -O plane.mp4
 
+RUN mv plane.mp4 /var/www/html/
+
 ADD chute/run.sh /usr/local/bin/run.sh
 
 # This is the command that will be run inside the container.  It can be a bash
