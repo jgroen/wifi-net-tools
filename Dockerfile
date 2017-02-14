@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
     apache2 \
     wget
 
-RUN wget http://52.37.177.82/paraglide.mp4 -O paraglide.mp4
+RUN wget http://52.37.177.82/balloon.mp4 -O balloon.mp4
 
 ADD chute/run.sh /usr/local/bin/run.sh
 
