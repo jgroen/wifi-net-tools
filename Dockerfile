@@ -14,6 +14,7 @@ RUN apt-get update && apt-get install -y \
     wget
 
 RUN wget http://52.37.177.82/original.mp4 -O original.mp4
+RUN wget http://52.37.177.82/cut.mp4 -O cut.mp4
 
 ADD chute/run.sh /usr/local/bin/run.sh
 
