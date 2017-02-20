@@ -9,6 +9,7 @@ rm /var/www/html/index.html
 
 mv original.mp4 /var/www/html/
 mv cut.mp4 /var/www/html/
+mv cut2.mp4 /var/www/html/
 
 /etc/init.d/apache2 restart
     
